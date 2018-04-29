@@ -11,6 +11,11 @@ type Query {
   bit(id: ID): Bit
 }
 
+type Mutation {
+  # create a new bit
+  createBit(title: String!, markdown: String!, type: String!): Bit
+}
+
 type Author {
   id: Int
   firstName: String
